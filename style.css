@@ -256,3 +256,27 @@ html, body.letter-page {
         z-index: 10 !important;
     }
 }
+
+/* --- PERFECT MOBILE FIT --- */
+html, body {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background-color: #f7f3e9 !important;
+}
+
+.letter-screen-page {
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background-size: 100% 100% !important;
+    box-sizing: border-box !important;
+}
+
