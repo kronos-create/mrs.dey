@@ -280,3 +280,17 @@ html, body {
     box-sizing: border-box !important;
 }
 
+
+/* Ensure Envelope Never Collapses */
+.envelope-container {
+    min-height: 220px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.envelope-img {
+    display: block !important;
+    min-height: 180px !important;
+    object-fit: contain !important;
+}
