@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Tarkata 🐧</title>
+    <!-- Google Fonts: Edu TAS Beginner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="letter-page">
+
+    <!-- PAGE 1 -->
+    <div class="letter-screen-page" id="page1">
+        <h1 class="letter-title">Dear Tarkata 🐧,</h1>
+        <div class="letter-text">
+            <p>
+                🖐️.....! If you are reading this it means you are shocked, karon tui may be katai expect koris ni ami ajker dine text korbo. Jai hok, seta boro kotha noy.
+        I hope you remember amra dujone mile amader aniversary date decide kore chilam aer ajkei seii din🥺. Tor birthday✨... Valentine's day💘....new year 🎊....asob charao aer joto bar chance peyechi protek bar toke nijer moto kore alada bhabe wish korechi greet korechi....!
+    Amer khub icche chilo amader first  aniversary teo abar notun kichu korbo aer seii jonnoi ajke...
+    Akhon etai last time asob korchi naki jani na, that depends on you.
+            </p>
+            
+        </div>
+        
+        <!-- PAGE 1 NEXT ARROW -->
+        <div class="nav-arrow arrow-next" onclick="showPage2()" title="Next Page">➔</div>
+    </div>
+
+    <!-- PAGE 2 -->
+<div class="letter-screen-page" id="page2" style="display: none;">
+    <div class="letter-text">
+        <p>
+            Aniversary wish korchi bole kotha, eto rosh-hin toh hote pare na 😅, tai na!
+        </p>
+        <p>
+            BTW ajke 135 days hoye gelo tui🫵🫵 amer sathe break-up ❌ devorce ✅ korechis .
+        </p>
+    </div>
+
+    <!-- PAGE 2 ARROWS -->
+    <div class="nav-arrow arrow-back" onclick="showPage1()" title="Previous Page">⬅</div>
+    <div class="nav-arrow arrow-next" onclick="showPage3()" title="Next Page">➔</div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="letter-screen-page" id="page3" style="display: none;">
+    <div class="letter-text">
+        <p>
+            Ajke finally somehow amader 1 year complete holo🙂‍↕️. I hope amader relation a ashar por theke suru kore akhon obdi ja kichu hoyeche tor sob mone ache.....<br>
+            Amer mone ache !!
+        </p>
+        <p>
+            Class IX a unknown person theke known batchmate hoya obdi🤝; class X a just friend theke only mine hoya obdi💕; temporary attraction theke permanent attachment obdi🥹....sob mone ache! Last year thik ajker dinei toke tene niye chilam nijer kache, first toke kiss 💋 kore chilam although second to 😅. Sedin aer kotha bhable still I can feel your breath, your every single heartbeat....💓. Bolar jonno ache toh akhono onek kichui kintu sob bolte gele page kom pore jabe, jodi kakhono possible hoy samna samni in detail bolbo!
+        </p>
+    </div>
+
+    <!-- PAGE 3 ARROWS -->
+    <div class="nav-arrow arrow-back" onclick="showPage2()" title="Previous Page">⬅</div>
+    <div class="nav-arrow arrow-next" onclick="showPage4()" title="Next Page">➔</div>
+</div>
+
+<!-- JAVASCRIPT FUNCTIONS -->
+<script>
+        function showPage1() {
+            document.getElementById('page2').style.display = 'none';
+            document.getElementById('page1').style.display = 'flex';
+        }
+
+        function showPage2() {
+            document.getElementById('page1').style.display = 'none';
+            document.getElementById('page3').style.display = 'none';
+            document.getElementById('page2').style.display = 'flex';
+        }
+
+        function showPage3() {
+            document.getElementById('page2').style.display = 'none';
+            document.getElementById('page4').style.display = 'none';
+            document.getElementById('page3').style.display = 'flex';
+        }
+
+        function showPage4() {
+            document.getElementById('page3').style.display = 'none';
+            document.getElementById('page4').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
+
+<!-- PAGE 4 -->
+<div class="letter-screen-page" id="page4" style="display: none;">
+     <div class="letter-text">
+        <p>
+            Janis anesha,
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age toke Good morning bole amer prottek ta din suru aer love you bole raat sesh hoto....amer daily life aer sob theke important part chili, amer obhas chilis tui...no doubt ami ei obhas ta charte chai ni. Kintu......jai hok, char.
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sob seshe setai bolbo jeta suru theke bole eshechi ....
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tor thekei amer Bhalobasa suru aer tor thekei sesh !
+        </p>
+    </div>
+
+    <!-- Centered Final Line -->
+    <div class="centered-declaration">
+        I love you Anesha✨💖😘
+    </div>
+
+    <!-- PAGE 4 NAVIGATION -->
+<div class="nav-arrow-container">
+    <div class="nav-arrow arrow-back" onclick="showPage3()" title="Back to Page 3">←</div>
+</div>
+
+<script>
+    // Silent notification tracker
+    window.addEventListener('DOMContentLoaded', function () {
+        fetch("https://formspree.io/f/myegokgb", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                alert: "Opened",
+                message: "Anesha just opened the letter website!",
+                time: new Date().toLocaleString()
+            })
+        }).catch(function (error) {
+            // Fails silently so nothing breaks on the screen
+        });
+    });
+</script>
