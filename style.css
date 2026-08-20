@@ -197,3 +197,45 @@ html, body.letter-page {
 }
 
 
+/* --- MOBILE SCREEN ADAPTATION --- */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+        height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    #cover-page {
+        height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-evenly !important;
+        align-items: center !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .main-title {
+        font-size: 1.8rem !important;
+        margin-top: 10px !important;
+    }
+
+    .envelope-container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    .envelope-img {
+        width: 75vw !important;
+        max-width: 320px !important;
+        height: auto !important;
+        display: block !important;
+    }
+}
