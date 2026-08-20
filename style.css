@@ -197,19 +197,16 @@ html, body.letter-page {
 }
 
 
-/* --- MOBILE SCREEN ADAPTATION --- */
+/* --- MOBILE SCREEN OPTIMIZATION --- */
 @media screen and (max-width: 768px) {
     body {
-        padding: 0 !important;
         margin: 0 !important;
+        padding: 0 !important;
         overflow-x: hidden !important;
         height: 100vh !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
     }
 
+    /* Envelope Cover Page */
     #cover-page {
         height: 100vh !important;
         display: flex !important;
@@ -220,22 +217,41 @@ html, body.letter-page {
         box-sizing: border-box !important;
     }
 
-    .main-title {
-        font-size: 1.8rem !important;
-        margin-top: 10px !important;
-    }
-
-    .envelope-container {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        width: 100% !important;
-    }
-
     .envelope-img {
         width: 75vw !important;
-        max-width: 320px !important;
+        max-width: 300px !important;
         height: auto !important;
-        display: block !important;
+    }
+
+    /* Letter Container / Paper Size */
+    .letter-page, .letter-container, .paper, .page {
+        width: 92vw !important;
+        max-width: 380px !important;
+        height: 92vh !important;
+        margin: 4vh auto !important;
+        padding: 40px 24px 75px 24px !important; /* Large bottom padding so text never touches the buttons */
+        box-sizing: border-box !important;
+        overflow-y: auto !important; /* Allows smooth vertical scrolling if text ever overflows */
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    /* Heading Text Size */
+    .letter-page h2, .letter-page h3, .dear-title {
+        font-size: 1.6rem !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* Body Text & Paragraphs */
+    .letter-page p, .letter-text, .page p {
+        font-size: 1.02rem !important;  /* Perfectly proportioned font size */
+        line-height: 1.45 !important;   /* Tighter line height to fit the whole page */
+        margin-bottom: 10px !important;
+    }
+
+    /* Navigation Buttons (Bottom Arrows) */
+    .nav-buttons, .buttons-container {
+        bottom: 15px !important;
+        z-index: 10 !important;
     }
 }
